@@ -2,19 +2,20 @@
   <servers>
     <server>
       <id>github</id>      
+	   <username>sankalpkale88</username>
       <password>c9c9f1f6d9d3c3166e6f701a0f5be67a90d0f627</password>
     </server>
   </servers>
       <profiles>
         <profile>
-            <id>securecentral</id>
+            <id>github</id>
             <activation>
                 <activeByDefault>true</activeByDefault>
             </activation>
             <repositories>               
                 <repository>
-                    <id>odana-maven-repo-mvn-repo</id>
-					<url>https://raw.github.com/sankalpkale88/odana-maven-repo/mvn-repo/</url>
+                    <id>github</id>
+					<url>https://raw.githubusercontent.com/sankalpkale88/odana-maven-repo/mvn-repo/</url>
                     <releases>
                         <enabled>true</enabled>
                     </releases>
@@ -41,4 +42,7 @@
             </pluginRepositories>
         </profile>
     </profiles>
+	 <activeProfiles>
+		<activeProfile>github</activeProfile>
+	</activeProfiles>
 </settings>
